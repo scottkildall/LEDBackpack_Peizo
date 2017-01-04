@@ -27,6 +27,7 @@ int delayTime = 250;
 
 //-- initialize the LED Backpack, set value to 0
 void setup() {
+  matrix.begin(0x70);
   matrix.print(0, DEC);
   matrix.writeDisplay();
 }
